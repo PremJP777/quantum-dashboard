@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Quantum Live Jobs Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Chart.js for graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔮 IBM Quantum Live Tracker</h1>
+            <p>Last updated: <span id="update-time">-</span></p>
+        </header>
+
+        <div id="backend-list" class="backend-grid">
+            <!-- The JavaScript will populate this div with backend cards -->
+        </div>
+
+        <div class="charts">
+            <div class="chart-container">
+                <h3>Queue Load Comparison</h3>
+                <canvas id="queue-chart"></canvas>
+            </div>
+            <!-- You can add more chart containers here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
